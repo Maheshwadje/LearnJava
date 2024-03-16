@@ -1,0 +1,3 @@
+WebElement textarea = d2.findElement(By.tagName("textarea"));
+		textarea.sendKeys("India");
+		textarea.sendKeys(Keys.ENTER);

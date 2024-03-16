@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automation Testing Playground</title>
+</head>
+<body>
+
+<h1>Automation Testing Playground</h1>
+
+<form id="testForm" action="/submitForm" method="POST">
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="lastName"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Subscribe to newsletter</label><br>
+
+    <p>Please select your gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="australia">Australia</option>
+    </select><br>
+
+    <input type="button" value="Click Me" onclick="alert('Button clicked!');"><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<a href="https://example.com" target="_blank">Visit Example.com</a>
+
+<script>
+// Example JavaScript to prevent form submission for demonstration purposes
+document.getElementById("testForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    alert('Form submission is prevented for demonstration.');
+});
+</script>
+
+</body>
+</html>
